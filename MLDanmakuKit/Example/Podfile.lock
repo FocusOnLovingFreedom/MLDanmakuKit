@@ -1,0 +1,16 @@
+PODS:
+  - MLDanmakuKit (1.0.0)
+
+DEPENDENCIES:
+  - MLDanmakuKit (from `../`)
+
+EXTERNAL SOURCES:
+  MLDanmakuKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MLDanmakuKit: 65a8819f23086efc9a8a0417d2def13ceea643d9
+
+PODFILE CHECKSUM: 0b70ae806966e2806383a313812cbaef4321a97d
+
+COCOAPODS: 1.11.3

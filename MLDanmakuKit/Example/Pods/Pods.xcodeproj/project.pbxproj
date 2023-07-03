@@ -1,0 +1,975 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07E965281D268031A86450CD7040F234 /* MLDanmakuEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = DB965F77B92E304036382CA9C5194A13 /* MLDanmakuEngine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10AA94D040C27A43A2EE66A0B7987098 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		13AD4BD4A4B6A433C0929ABC96A51CBF /* MLDanmakuLiveSource.h in Headers */ = {isa = PBXBuildFile; fileRef = D4D5300BC662E6C286E3D87C8CB5EFC6 /* MLDanmakuLiveSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C80C12011F9A1F1011DC969D2B4912F /* MLDanmakuSource.h in Headers */ = {isa = PBXBuildFile; fileRef = B89FBA1B3EB9C81D13B1E51FB0EB5FFB /* MLDanmakuSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E071F9360F3C2E27B51B9B886D5BA37 /* Pods-MLDanmakuKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0EF9259FB22FB98ACAAB23754DEFE9 /* Pods-MLDanmakuKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		23930947ED1C26824DF891D73C7565FA /* MLDanmakuLiveSource.m in Sources */ = {isa = PBXBuildFile; fileRef = B7DBDD73CF07151BE0089F014A010370 /* MLDanmakuLiveSource.m */; };
+		240DBBAE7AA1127D589D9E428FE31D1B /* MLDanmakuTextModel.h in Headers */ = {isa = PBXBuildFile; fileRef = E845DBB8FF99DD3EA2AC6296D3C6A274 /* MLDanmakuTextModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		283F901642C951EEEBDB9EF21A7D287E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		2A0A914548D7C7CAAF9C013385A3EE1B /* MLDanmakuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A7ECBA608A69D668BC99E7C81F013FEC /* MLDanmakuModel.m */; };
+		2C948F9841C261FA7CB4613BC45639CC /* MLDanmakuConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 12766D44111F817C088C3E8DA3275EDF /* MLDanmakuConfiguration.m */; };
+		2E4AAD9D940F7E3A4C5DF4E66513C168 /* MLDanmakuConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = AE5BC2039302DF668E79E8055F18F2B0 /* MLDanmakuConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		467AAEB5A61648FCDF692E909793CA7B /* MLDanmakuVideoSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF8D78FDB05568E4DF42495A028F70A /* MLDanmakuVideoSource.m */; };
+		483A265B8242194F78B65B61D6301191 /* MLDanmakuRichTextLayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D9449BA8EA9AEC651F8FA156FEAD85 /* MLDanmakuRichTextLayerCell.m */; };
+		50F37ED3003B6FFAE812FD719F826B2A /* MLDanmakuLayerCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D076F69295252EFF03B7D8435CBC772 /* MLDanmakuLayerCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53415FD76316B117DCE9A751918C1570 /* MLRLDanmakuContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 423F13EFB07F1C5F0364A7700155A049 /* MLRLDanmakuContainerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54FF76F76D36AAAD033EE157D7C9BD76 /* MLDanmakuAgent.h in Headers */ = {isa = PBXBuildFile; fileRef = FB3744C33DCFD6E5010F8533C243E7D8 /* MLDanmakuAgent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		55D50FEF905AD69BE528B0A50ACE285D /* Pods-MLDanmakuKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C62A8696A99E532AD4D79A7814D08D31 /* Pods-MLDanmakuKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5C023AFF245449BEBED83B81EEF3AE25 /* MLDanmakuTypeRetainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 681E82884543757AF0E59BD0D3BB0B1E /* MLDanmakuTypeRetainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62CD616BF2FF7C371981A9E042D7B742 /* MLDanmakuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9082D9A65F0D8EB92BFF443C1DBC0C92 /* MLDanmakuView.m */; };
+		62F2FCC9632DBAA886DBA31CA2178044 /* MLDanmakuSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 730082C6C14B1C950D043464DD1B88EB /* MLDanmakuSource.m */; };
+		6E6AF8E02FEA7852F9D23828B3E90B8C /* MLDanmakuDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = BD555D9274F04464D4BD7937E33DAF88 /* MLDanmakuDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6ECE75E1635A03C0F05C0657DB1F43AB /* MLRLDanmakuContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D69B6FEC3D29AE54831F9C792A71CB /* MLRLDanmakuContainerView.m */; };
+		7EB90F969785957EB1F68D795CAA318B /* MLTBDanmakuContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = CAFDF572A34C398517F02BAC7E90A81A /* MLTBDanmakuContainerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7F4939A9972FE6AC1F0C5639CBA05539 /* MLDanmakuView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7189B10E6EF3418167C8668B83C5B6C4 /* MLDanmakuView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8099BEE09E936AB5A5520D3F19E9DE32 /* MLTBDanmakuContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86B85F841ABA8E17A89F30AE35533594 /* MLTBDanmakuContainerView.m */; };
+		828B3F2EE3C55D2A484D6414129F13A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		8EB0A5D2E36D5B3554A615FDAE540C7D /* MLDanmakuTextModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B1599C86A218AE1C490A261B31963FE6 /* MLDanmakuTextModel.m */; };
+		928140C5405C8DCF7DFEE36F66883B1C /* MLDanmakuKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9B49492D779E674C39D0FC94A863C7 /* MLDanmakuKit-dummy.m */; };
+		94A3A9DB9BA809E207F2616DF29891D0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		A1D0A79AA7227657B0C81A83E64CA154 /* MLDanmakuTextCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35FBF00C3BB10B19E643B09147479D1A /* MLDanmakuTextCell.m */; };
+		A22029134B84101DDAF87AA587E8A079 /* MLDanmakuKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E3C348519C0D90427A1D82CDD89AF1CF /* MLDanmakuKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A7070B0FBF4F70043002479B2CE009C5 /* MLDanmakuExtention.m in Sources */ = {isa = PBXBuildFile; fileRef = DDD50E4C6F90CFD675F5815204EB5F78 /* MLDanmakuExtention.m */; };
+		ACFF4E6E01FC6D1A83F0308896FBFA4C /* MLDanmakuTypeRetainer.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9B782FD4DFFAB0DE8C4558CA2C9968 /* MLDanmakuTypeRetainer.m */; };
+		BB096210B358D1F5DD2DE591BB98F432 /* MLDanmakuContainerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 51278D5F30614C1E8D7AB51424576703 /* MLDanmakuContainerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C46D6698DA3EA5DC3CF093E9B42EEC12 /* MLDanmakuExtention.h in Headers */ = {isa = PBXBuildFile; fileRef = 17B80B6B0B09C6A62B95F46AAC961074 /* MLDanmakuExtention.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C51B9DD0E8A0C2958A7DC4A88ECEE65F /* MLDanmaku.h in Headers */ = {isa = PBXBuildFile; fileRef = 561396C1799AC421324862F5E056A111 /* MLDanmaku.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CAE53819022E1E52E2698BE969B31C7F /* MLDanmakuModel.h in Headers */ = {isa = PBXBuildFile; fileRef = A56D04887930666CBFE19AEC0772D9E4 /* MLDanmakuModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB853AC77D350F60CDEE934EB46AB056 /* MLDanmakuLayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F8C8FF9910F2E9CDE043BE0B7593A1C3 /* MLDanmakuLayerCell.m */; };
+		CBD636F2131C73887C28384C94FA58D8 /* MLDanmakuCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F9D0B2C23064C3BAEC4E400BC6E96B6 /* MLDanmakuCell.m */; };
+		D5620B60129D5BC5575D6C0A3C981112 /* MLDanmakuAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = BFFEF46E59DA9281AF325E021613C1A8 /* MLDanmakuAgent.m */; };
+		D61CDF621FEF09AB01F1AB9A6F858EDF /* Pods-MLDanmakuKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D94E3DB796A9CF21D1D0157CEC06E91E /* Pods-MLDanmakuKit_Example-dummy.m */; };
+		D8623AFF6355F21B54C48CC71C1B9E2D /* MLDanmakuContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09F513691D399ADB3C3260BA4E2D7436 /* MLDanmakuContainerView.m */; };
+		E0B1F8838E36E1600690566D245D9378 /* MLDanmakuCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 34C8C66ED52875742CE50D703CAF7A54 /* MLDanmakuCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EAA9FFC944DC07EED92BF52AFBEBBD77 /* MLDanmakuRichTextLayerCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 05B34043330A8768DEDD722E0006E30F /* MLDanmakuRichTextLayerCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F165D379074388D08D28897B2FE75F73 /* Pods-MLDanmakuKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 403E604CC1BFDA08F3B5AAE66B6441DF /* Pods-MLDanmakuKit_Tests-dummy.m */; };
+		F2563A81F68EFE953A1B45D0CAAFF781 /* MLDanmakuEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E64A90F359CBBFA932A3BDDADC60141 /* MLDanmakuEngine.m */; };
+		F5AE0F191DC9D793CA2BC6CA7625F599 /* MLDanmakuVideoSource.h in Headers */ = {isa = PBXBuildFile; fileRef = CBD1B71751F2E83FC291BCC94FD69AA0 /* MLDanmakuVideoSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA47700AB3F9E5A8A45DE94DB586E3A2 /* MLDanmakuTextCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F68061CA01931DA009EB6A2AF03781D /* MLDanmakuTextCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD8B2BBC8B38F0A60A2231B8B78C69D0 /* MLDanmakuProtocolCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 58C863BF568874D3937E1216E5D1DFB7 /* MLDanmakuProtocolCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B98596CBC1866971AE4798028FA67E2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81E4BAAD02982BAF1605205DC371CCA6;
+			remoteInfo = "Pods-MLDanmakuKit_Example";
+		};
+		D9DC4D05EE89D8346BC0B774818599EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64E7B2E46641963B65E59D6A05CCFD95;
+			remoteInfo = MLDanmakuKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05B34043330A8768DEDD722E0006E30F /* MLDanmakuRichTextLayerCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLDanmakuRichTextLayerCell.h; sourceTree = "<group>"; };
+		09F513691D399ADB3C3260BA4E2D7436 /* MLDanmakuContainerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLDanmakuContainerView.m; sourceTree = "<group>"; };
+		0F0EF9259FB22FB98ACAAB23754DEFE9 /* Pods-MLDanmakuKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MLDanmakuKit_Tests-umbrella.h"; sourceTree = "<group>"; };
+		12766D44111F817C088C3E8DA3275EDF /* MLDanmakuConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLDanmakuConfiguration.m; sourceTree = "<group>"; };
+		14B37B2AE1E37AB72A9F0AC0ED4B6B07 /* MLDanmakuKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MLDanmakuKit-prefix.pch"; sourceTree = "<group>"; };
+		17547F92D46B013F312F92FD4CC0411D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		17B80B6B0B09C6A62B95F46AAC961074 /* MLDanmakuExtention.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MLDanmakuExtention.h; path = DanmaKu/MLDanmakuExtention.h; sourceTree = "<group>"; };
+		1C32310B0C643AD6A95C10850D8B49F2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		25776053C7C32CBD912011D5172B4B59 /* Pods-MLDanmakuKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MLDanmakuKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2595F8345BBA91BA19B823BE202121C6 /* Pods-MLDanmakuKit_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MLDanmakuKit_Example"; path = Pods_MLDanmakuKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		30F2AADFA15FA83CCBBD03CA46006D36 /* Pods-MLDanmakuKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MLDanmakuKit_Example.modulemap"; sourceTree = "<group>"; };
+		34C8C66ED52875742CE50D703CAF7A54 /* MLDanmakuCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLDanmakuCell.h; sourceTree = "<group>"; };
+		35FBF00C3BB10B19E643B09147479D1A /* MLDanmakuTextCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLDanmakuTextCell.m; sourceTree = "<group>"; };
+		3D9B49492D779E674C39D0FC94A863C7 /* MLDanmakuKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MLDanmakuKit-dummy.m"; sourceTree = "<group>"; };
+		3E64A90F359CBBFA932A3BDDADC60141 /* MLDanmakuEngine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MLDanmakuEngine.m; path = DanmaKu/MLDanmakuEngine.m; sourceTree = "<group>"; };
+		3F5A6CA0314DAE68CF604C60B452C2AE /* Pods-MLDanmakuKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MLDanmakuKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3FB7D4B93D347451DFC0C77F19FE28C1 /* Pods-MLDanmakuKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MLDanmakuKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		403E604CC1BFDA08F3B5AAE66B6441DF /* Pods-MLDanmakuKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MLDanmakuKit_Tests-dummy.m"; sourceTree = "<group>"; };
+		423F13EFB07F1C5F0364A7700155A049 /* MLRLDanmakuContainerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLRLDanmakuContainerView.h; sourceTree = "<group>"; };
+		4292C78A72361308A17C0958B0AE1324 /* Pods-MLDanmakuKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MLDanmakuKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		45D69B6FEC3D29AE54831F9C792A71CB /* MLRLDanmakuContainerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLRLDanmakuContainerView.m; sourceTree = "<group>"; };
+		51278D5F30614C1E8D7AB51424576703 /* MLDanmakuContainerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLDanmakuContainerView.h; sourceTree = "<group>"; };
+		53411169D6BEB49092EF2FE41026EF0E /* Pods-MLDanmakuKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MLDanmakuKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		561396C1799AC421324862F5E056A111 /* MLDanmaku.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MLDanmaku.h; path = DanmaKu/MLDanmaku.h; sourceTree = "<group>"; };
+		58C863BF568874D3937E1216E5D1DFB7 /* MLDanmakuProtocolCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MLDanmakuProtocolCell.h; path = DanmaKu/MLDanmakuProtocolCell.h; sourceTree = "<group>"; };
+		5BF8D78FDB05568E4DF42495A028F70A /* MLDanmakuVideoSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLDanmakuVideoSource.m; sourceTree = "<group>"; };
+		5D076F69295252EFF03B7D8435CBC772 /* MLDanmakuLayerCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLDanmakuLayerCell.h; sourceTree = "<group>"; };
+		5F68061CA01931DA009EB6A2AF03781D /* MLDanmakuTextCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLDanmakuTextCell.h; sourceTree = "<group>"; };
+		5F9D0B2C23064C3BAEC4E400BC6E96B6 /* MLDanmakuCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLDanmakuCell.m; sourceTree = "<group>"; };
+		632813201A8ACB88CAEEDCBE2A785E53 /* Pods-MLDanmakuKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MLDanmakuKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		681E82884543757AF0E59BD0D3BB0B1E /* MLDanmakuTypeRetainer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLDanmakuTypeRetainer.h; sourceTree = "<group>"; };
+		6ECB90D19DAEAC1C2ECE9B02C67152DD /* MLDanmakuKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MLDanmakuKit.debug.xcconfig; sourceTree = "<group>"; };
+		70D8C2FBF7561FAE8AC245738D7FD33F /* Pods-MLDanmakuKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MLDanmakuKit_Tests-Info.plist"; sourceTree = "<group>"; };
+		7189B10E6EF3418167C8668B83C5B6C4 /* MLDanmakuView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MLDanmakuView.h; path = DanmaKu/MLDanmakuView.h; sourceTree = "<group>"; };
+		730082C6C14B1C950D043464DD1B88EB /* MLDanmakuSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLDanmakuSource.m; sourceTree = "<group>"; };
+		7F37F85309D567590B328D29D26F367B /* MLDanmakuKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MLDanmakuKit.modulemap; sourceTree = "<group>"; };
+		8049CB6809B596BCE54781775FB4EF30 /* Pods-MLDanmakuKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MLDanmakuKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8151E4FA85A52EFB3387272317B3983F /* Pods-MLDanmakuKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MLDanmakuKit_Tests.modulemap"; sourceTree = "<group>"; };
+		81B11DDDF2092B9500A9FE1B9B80B189 /* Pods-MLDanmakuKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MLDanmakuKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		86B85F841ABA8E17A89F30AE35533594 /* MLTBDanmakuContainerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLTBDanmakuContainerView.m; sourceTree = "<group>"; };
+		8A9F7FE0FAFD25951AFAA273EA00EC72 /* Pods-MLDanmakuKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MLDanmakuKit_Example-Info.plist"; sourceTree = "<group>"; };
+		8D8EE7E4C62E81321CBD37CCE0DFA24B /* Pods-MLDanmakuKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MLDanmakuKit_Example-frameworks.sh"; sourceTree = "<group>"; };
+		9082D9A65F0D8EB92BFF443C1DBC0C92 /* MLDanmakuView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MLDanmakuView.m; path = DanmaKu/MLDanmakuView.m; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A56D04887930666CBFE19AEC0772D9E4 /* MLDanmakuModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLDanmakuModel.h; sourceTree = "<group>"; };
+		A7ECBA608A69D668BC99E7C81F013FEC /* MLDanmakuModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLDanmakuModel.m; sourceTree = "<group>"; };
+		AE5BC2039302DF668E79E8055F18F2B0 /* MLDanmakuConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLDanmakuConfiguration.h; sourceTree = "<group>"; };
+		B1599C86A218AE1C490A261B31963FE6 /* MLDanmakuTextModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLDanmakuTextModel.m; sourceTree = "<group>"; };
+		B7DBDD73CF07151BE0089F014A010370 /* MLDanmakuLiveSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLDanmakuLiveSource.m; sourceTree = "<group>"; };
+		B89FBA1B3EB9C81D13B1E51FB0EB5FFB /* MLDanmakuSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLDanmakuSource.h; sourceTree = "<group>"; };
+		BD555D9274F04464D4BD7937E33DAF88 /* MLDanmakuDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MLDanmakuDefines.h; path = DanmaKu/MLDanmakuDefines.h; sourceTree = "<group>"; };
+		BD95D14F822E6C4D3B5E7094E4BC8DA2 /* MLDanmakuKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MLDanmakuKit.release.xcconfig; sourceTree = "<group>"; };
+		BFFEF46E59DA9281AF325E021613C1A8 /* MLDanmakuAgent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLDanmakuAgent.m; sourceTree = "<group>"; };
+		C62A8696A99E532AD4D79A7814D08D31 /* Pods-MLDanmakuKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MLDanmakuKit_Example-umbrella.h"; sourceTree = "<group>"; };
+		CAFDF572A34C398517F02BAC7E90A81A /* MLTBDanmakuContainerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLTBDanmakuContainerView.h; sourceTree = "<group>"; };
+		CBD1B71751F2E83FC291BCC94FD69AA0 /* MLDanmakuVideoSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLDanmakuVideoSource.h; sourceTree = "<group>"; };
+		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D4D5300BC662E6C286E3D87C8CB5EFC6 /* MLDanmakuLiveSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLDanmakuLiveSource.h; sourceTree = "<group>"; };
+		D77A709A15412D38316A9DC631F40943 /* Pods-MLDanmakuKit_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MLDanmakuKit_Tests"; path = Pods_MLDanmakuKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D94E3DB796A9CF21D1D0157CEC06E91E /* Pods-MLDanmakuKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MLDanmakuKit_Example-dummy.m"; sourceTree = "<group>"; };
+		D9FBEAE39442DC7554C06A0EA215F301 /* MLDanmakuKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MLDanmakuKit; path = MLDanmakuKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB965F77B92E304036382CA9C5194A13 /* MLDanmakuEngine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MLDanmakuEngine.h; path = DanmaKu/MLDanmakuEngine.h; sourceTree = "<group>"; };
+		DB9B782FD4DFFAB0DE8C4558CA2C9968 /* MLDanmakuTypeRetainer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLDanmakuTypeRetainer.m; sourceTree = "<group>"; };
+		DDD50E4C6F90CFD675F5815204EB5F78 /* MLDanmakuExtention.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MLDanmakuExtention.m; path = DanmaKu/MLDanmakuExtention.m; sourceTree = "<group>"; };
+		E3C348519C0D90427A1D82CDD89AF1CF /* MLDanmakuKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MLDanmakuKit-umbrella.h"; sourceTree = "<group>"; };
+		E845DBB8FF99DD3EA2AC6296D3C6A274 /* MLDanmakuTextModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLDanmakuTextModel.h; sourceTree = "<group>"; };
+		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F0D9449BA8EA9AEC651F8FA156FEAD85 /* MLDanmakuRichTextLayerCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLDanmakuRichTextLayerCell.m; sourceTree = "<group>"; };
+		F4E8D8EECC131091CC4B909A9AFF8AEF /* MLDanmakuKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MLDanmakuKit-Info.plist"; sourceTree = "<group>"; };
+		F8C8FF9910F2E9CDE043BE0B7593A1C3 /* MLDanmakuLayerCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MLDanmakuLayerCell.m; sourceTree = "<group>"; };
+		FB3744C33DCFD6E5010F8533C243E7D8 /* MLDanmakuAgent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MLDanmakuAgent.h; sourceTree = "<group>"; };
+		FFE0851CCE54DA3DF9E63D27ACB05827 /* MLDanmakuKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MLDanmakuKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7C373163896F2F6CCFD452A424F222C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				283F901642C951EEEBDB9EF21A7D287E /* Foundation.framework in Frameworks */,
+				94A3A9DB9BA809E207F2616DF29891D0 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C03071332C445E88D1676EA83CF05AF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10AA94D040C27A43A2EE66A0B7987098 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3F52080D38B7D297B2FA3C5B55AB041 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				828B3F2EE3C55D2A484D6414129F13A5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A00591C00E8929A90DA8753E8EF9D87 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9FBEAE39442DC7554C06A0EA215F301 /* MLDanmakuKit */,
+				2595F8345BBA91BA19B823BE202121C6 /* Pods-MLDanmakuKit_Example */,
+				D77A709A15412D38316A9DC631F40943 /* Pods-MLDanmakuKit_Tests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		328400AB696C8491E774A1C4771C2BEC /* Pods-MLDanmakuKit_Example */ = {
+			isa = PBXGroup;
+			children = (
+				30F2AADFA15FA83CCBBD03CA46006D36 /* Pods-MLDanmakuKit_Example.modulemap */,
+				8049CB6809B596BCE54781775FB4EF30 /* Pods-MLDanmakuKit_Example-acknowledgements.markdown */,
+				81B11DDDF2092B9500A9FE1B9B80B189 /* Pods-MLDanmakuKit_Example-acknowledgements.plist */,
+				D94E3DB796A9CF21D1D0157CEC06E91E /* Pods-MLDanmakuKit_Example-dummy.m */,
+				8D8EE7E4C62E81321CBD37CCE0DFA24B /* Pods-MLDanmakuKit_Example-frameworks.sh */,
+				8A9F7FE0FAFD25951AFAA273EA00EC72 /* Pods-MLDanmakuKit_Example-Info.plist */,
+				C62A8696A99E532AD4D79A7814D08D31 /* Pods-MLDanmakuKit_Example-umbrella.h */,
+				632813201A8ACB88CAEEDCBE2A785E53 /* Pods-MLDanmakuKit_Example.debug.xcconfig */,
+				53411169D6BEB49092EF2FE41026EF0E /* Pods-MLDanmakuKit_Example.release.xcconfig */,
+			);
+			name = "Pods-MLDanmakuKit_Example";
+			path = "Target Support Files/Pods-MLDanmakuKit_Example";
+			sourceTree = "<group>";
+		};
+		4B4486D96CD1AEDCD7930CD3BABFBD1E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				328400AB696C8491E774A1C4771C2BEC /* Pods-MLDanmakuKit_Example */,
+				FA240F70DF64AB2390436DEC3808C0A0 /* Pods-MLDanmakuKit_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */,
+				D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5A27D0D36DD26C6069BBD597BC24A53C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D4D5300BC662E6C286E3D87C8CB5EFC6 /* MLDanmakuLiveSource.h */,
+				B7DBDD73CF07151BE0089F014A010370 /* MLDanmakuLiveSource.m */,
+				B89FBA1B3EB9C81D13B1E51FB0EB5FFB /* MLDanmakuSource.h */,
+				730082C6C14B1C950D043464DD1B88EB /* MLDanmakuSource.m */,
+				CBD1B71751F2E83FC291BCC94FD69AA0 /* MLDanmakuVideoSource.h */,
+				5BF8D78FDB05568E4DF42495A028F70A /* MLDanmakuVideoSource.m */,
+			);
+			name = Source;
+			path = DanmaKu/Source;
+			sourceTree = "<group>";
+		};
+		6C0E2A7E843A0F047CE9E7571167F387 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE6C3B4F1178D1F0BBE0A69823FAEC1D /* MLDanmakuKit */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		71890C3257D3A73C788AE4C625DF78ED /* ViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				34C8C66ED52875742CE50D703CAF7A54 /* MLDanmakuCell.h */,
+				5F9D0B2C23064C3BAEC4E400BC6E96B6 /* MLDanmakuCell.m */,
+				5F68061CA01931DA009EB6A2AF03781D /* MLDanmakuTextCell.h */,
+				35FBF00C3BB10B19E643B09147479D1A /* MLDanmakuTextCell.m */,
+			);
+			name = ViewCell;
+			path = ViewCell;
+			sourceTree = "<group>";
+		};
+		80A50916FE25F522D0D88F10D6DBA926 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FB3744C33DCFD6E5010F8533C243E7D8 /* MLDanmakuAgent.h */,
+				BFFEF46E59DA9281AF325E021613C1A8 /* MLDanmakuAgent.m */,
+				AE5BC2039302DF668E79E8055F18F2B0 /* MLDanmakuConfiguration.h */,
+				12766D44111F817C088C3E8DA3275EDF /* MLDanmakuConfiguration.m */,
+				A56D04887930666CBFE19AEC0772D9E4 /* MLDanmakuModel.h */,
+				A7ECBA608A69D668BC99E7C81F013FEC /* MLDanmakuModel.m */,
+				E845DBB8FF99DD3EA2AC6296D3C6A274 /* MLDanmakuTextModel.h */,
+				B1599C86A218AE1C490A261B31963FE6 /* MLDanmakuTextModel.m */,
+				681E82884543757AF0E59BD0D3BB0B1E /* MLDanmakuTypeRetainer.h */,
+				DB9B782FD4DFFAB0DE8C4558CA2C9968 /* MLDanmakuTypeRetainer.m */,
+			);
+			name = Model;
+			path = DanmaKu/Model;
+			sourceTree = "<group>";
+		};
+		AE6C3B4F1178D1F0BBE0A69823FAEC1D /* MLDanmakuKit */ = {
+			isa = PBXGroup;
+			children = (
+				561396C1799AC421324862F5E056A111 /* MLDanmaku.h */,
+				BD555D9274F04464D4BD7937E33DAF88 /* MLDanmakuDefines.h */,
+				DB965F77B92E304036382CA9C5194A13 /* MLDanmakuEngine.h */,
+				3E64A90F359CBBFA932A3BDDADC60141 /* MLDanmakuEngine.m */,
+				17B80B6B0B09C6A62B95F46AAC961074 /* MLDanmakuExtention.h */,
+				DDD50E4C6F90CFD675F5815204EB5F78 /* MLDanmakuExtention.m */,
+				58C863BF568874D3937E1216E5D1DFB7 /* MLDanmakuProtocolCell.h */,
+				7189B10E6EF3418167C8668B83C5B6C4 /* MLDanmakuView.h */,
+				9082D9A65F0D8EB92BFF443C1DBC0C92 /* MLDanmakuView.m */,
+				80A50916FE25F522D0D88F10D6DBA926 /* Model */,
+				FA53F8B8F2B33A3BA8FE9A3597A6E62A /* Pod */,
+				5A27D0D36DD26C6069BBD597BC24A53C /* Source */,
+				C125B1331CF4C27D23AF1B2A4B3CDFA2 /* Support Files */,
+				F0409B5B135E1BF1921F28A6B3891372 /* View */,
+			);
+			name = MLDanmakuKit;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		C125B1331CF4C27D23AF1B2A4B3CDFA2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F37F85309D567590B328D29D26F367B /* MLDanmakuKit.modulemap */,
+				3D9B49492D779E674C39D0FC94A863C7 /* MLDanmakuKit-dummy.m */,
+				F4E8D8EECC131091CC4B909A9AFF8AEF /* MLDanmakuKit-Info.plist */,
+				14B37B2AE1E37AB72A9F0AC0ED4B6B07 /* MLDanmakuKit-prefix.pch */,
+				E3C348519C0D90427A1D82CDD89AF1CF /* MLDanmakuKit-umbrella.h */,
+				6ECB90D19DAEAC1C2ECE9B02C67152DD /* MLDanmakuKit.debug.xcconfig */,
+				BD95D14F822E6C4D3B5E7094E4BC8DA2 /* MLDanmakuKit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MLDanmakuKit";
+			sourceTree = "<group>";
+		};
+		C9D032A6FA29307582342A81716330F3 /* LayerCell */ = {
+			isa = PBXGroup;
+			children = (
+				5D076F69295252EFF03B7D8435CBC772 /* MLDanmakuLayerCell.h */,
+				F8C8FF9910F2E9CDE043BE0B7593A1C3 /* MLDanmakuLayerCell.m */,
+				05B34043330A8768DEDD722E0006E30F /* MLDanmakuRichTextLayerCell.h */,
+				F0D9449BA8EA9AEC651F8FA156FEAD85 /* MLDanmakuRichTextLayerCell.m */,
+			);
+			name = LayerCell;
+			path = LayerCell;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				6C0E2A7E843A0F047CE9E7571167F387 /* Development Pods */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				1A00591C00E8929A90DA8753E8EF9D87 /* Products */,
+				4B4486D96CD1AEDCD7930CD3BABFBD1E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		F0409B5B135E1BF1921F28A6B3891372 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				51278D5F30614C1E8D7AB51424576703 /* MLDanmakuContainerView.h */,
+				09F513691D399ADB3C3260BA4E2D7436 /* MLDanmakuContainerView.m */,
+				423F13EFB07F1C5F0364A7700155A049 /* MLRLDanmakuContainerView.h */,
+				45D69B6FEC3D29AE54831F9C792A71CB /* MLRLDanmakuContainerView.m */,
+				CAFDF572A34C398517F02BAC7E90A81A /* MLTBDanmakuContainerView.h */,
+				86B85F841ABA8E17A89F30AE35533594 /* MLTBDanmakuContainerView.m */,
+				C9D032A6FA29307582342A81716330F3 /* LayerCell */,
+				71890C3257D3A73C788AE4C625DF78ED /* ViewCell */,
+			);
+			name = View;
+			path = DanmaKu/View;
+			sourceTree = "<group>";
+		};
+		FA240F70DF64AB2390436DEC3808C0A0 /* Pods-MLDanmakuKit_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8151E4FA85A52EFB3387272317B3983F /* Pods-MLDanmakuKit_Tests.modulemap */,
+				3F5A6CA0314DAE68CF604C60B452C2AE /* Pods-MLDanmakuKit_Tests-acknowledgements.markdown */,
+				3FB7D4B93D347451DFC0C77F19FE28C1 /* Pods-MLDanmakuKit_Tests-acknowledgements.plist */,
+				403E604CC1BFDA08F3B5AAE66B6441DF /* Pods-MLDanmakuKit_Tests-dummy.m */,
+				70D8C2FBF7561FAE8AC245738D7FD33F /* Pods-MLDanmakuKit_Tests-Info.plist */,
+				0F0EF9259FB22FB98ACAAB23754DEFE9 /* Pods-MLDanmakuKit_Tests-umbrella.h */,
+				4292C78A72361308A17C0958B0AE1324 /* Pods-MLDanmakuKit_Tests.debug.xcconfig */,
+				25776053C7C32CBD912011D5172B4B59 /* Pods-MLDanmakuKit_Tests.release.xcconfig */,
+			);
+			name = "Pods-MLDanmakuKit_Tests";
+			path = "Target Support Files/Pods-MLDanmakuKit_Tests";
+			sourceTree = "<group>";
+		};
+		FA53F8B8F2B33A3BA8FE9A3597A6E62A /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				1C32310B0C643AD6A95C10850D8B49F2 /* LICENSE */,
+				FFE0851CCE54DA3DF9E63D27ACB05827 /* MLDanmakuKit.podspec */,
+				17547F92D46B013F312F92FD4CC0411D /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		26CACC9FD245A4B6FD7522204EBAD8BE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C51B9DD0E8A0C2958A7DC4A88ECEE65F /* MLDanmaku.h in Headers */,
+				54FF76F76D36AAAD033EE157D7C9BD76 /* MLDanmakuAgent.h in Headers */,
+				E0B1F8838E36E1600690566D245D9378 /* MLDanmakuCell.h in Headers */,
+				2E4AAD9D940F7E3A4C5DF4E66513C168 /* MLDanmakuConfiguration.h in Headers */,
+				BB096210B358D1F5DD2DE591BB98F432 /* MLDanmakuContainerView.h in Headers */,
+				6E6AF8E02FEA7852F9D23828B3E90B8C /* MLDanmakuDefines.h in Headers */,
+				07E965281D268031A86450CD7040F234 /* MLDanmakuEngine.h in Headers */,
+				C46D6698DA3EA5DC3CF093E9B42EEC12 /* MLDanmakuExtention.h in Headers */,
+				A22029134B84101DDAF87AA587E8A079 /* MLDanmakuKit-umbrella.h in Headers */,
+				50F37ED3003B6FFAE812FD719F826B2A /* MLDanmakuLayerCell.h in Headers */,
+				13AD4BD4A4B6A433C0929ABC96A51CBF /* MLDanmakuLiveSource.h in Headers */,
+				CAE53819022E1E52E2698BE969B31C7F /* MLDanmakuModel.h in Headers */,
+				FD8B2BBC8B38F0A60A2231B8B78C69D0 /* MLDanmakuProtocolCell.h in Headers */,
+				EAA9FFC944DC07EED92BF52AFBEBBD77 /* MLDanmakuRichTextLayerCell.h in Headers */,
+				1C80C12011F9A1F1011DC969D2B4912F /* MLDanmakuSource.h in Headers */,
+				FA47700AB3F9E5A8A45DE94DB586E3A2 /* MLDanmakuTextCell.h in Headers */,
+				240DBBAE7AA1127D589D9E428FE31D1B /* MLDanmakuTextModel.h in Headers */,
+				5C023AFF245449BEBED83B81EEF3AE25 /* MLDanmakuTypeRetainer.h in Headers */,
+				F5AE0F191DC9D793CA2BC6CA7625F599 /* MLDanmakuVideoSource.h in Headers */,
+				7F4939A9972FE6AC1F0C5639CBA05539 /* MLDanmakuView.h in Headers */,
+				53415FD76316B117DCE9A751918C1570 /* MLRLDanmakuContainerView.h in Headers */,
+				7EB90F969785957EB1F68D795CAA318B /* MLTBDanmakuContainerView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83885C90EEF58ED3D5EA3E01382642C1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55D50FEF905AD69BE528B0A50ACE285D /* Pods-MLDanmakuKit_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84039C2AD10CCBDEEAC1679EF0719845 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E071F9360F3C2E27B51B9B886D5BA37 /* Pods-MLDanmakuKit_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5DAB1A5E65D358C7C7FA48AD56E1302C /* Pods-MLDanmakuKit_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BE314E79539DA8F378ABD3853A7BB58 /* Build configuration list for PBXNativeTarget "Pods-MLDanmakuKit_Tests" */;
+			buildPhases = (
+				84039C2AD10CCBDEEAC1679EF0719845 /* Headers */,
+				2A15B0832CA8C874A16F07D90EA40C7D /* Sources */,
+				F3F52080D38B7D297B2FA3C5B55AB041 /* Frameworks */,
+				346E3D1BBACB615743BAC3460DE54959 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB93C8552F1A675C75086EF5773CB145 /* PBXTargetDependency */,
+			);
+			name = "Pods-MLDanmakuKit_Tests";
+			productName = Pods_MLDanmakuKit_Tests;
+			productReference = D77A709A15412D38316A9DC631F40943 /* Pods-MLDanmakuKit_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+		64E7B2E46641963B65E59D6A05CCFD95 /* MLDanmakuKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F8849D40246A4CF199023F69C736784 /* Build configuration list for PBXNativeTarget "MLDanmakuKit" */;
+			buildPhases = (
+				26CACC9FD245A4B6FD7522204EBAD8BE /* Headers */,
+				D9E1A11829DB224029EC60E63ED850AB /* Sources */,
+				7C373163896F2F6CCFD452A424F222C3 /* Frameworks */,
+				6CC9ACBE7C5EADAA0E2047F9836290D9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MLDanmakuKit;
+			productName = MLDanmakuKit;
+			productReference = D9FBEAE39442DC7554C06A0EA215F301 /* MLDanmakuKit */;
+			productType = "com.apple.product-type.framework";
+		};
+		81E4BAAD02982BAF1605205DC371CCA6 /* Pods-MLDanmakuKit_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 381F876FBAF96841F3B2F0CD22BCC360 /* Build configuration list for PBXNativeTarget "Pods-MLDanmakuKit_Example" */;
+			buildPhases = (
+				83885C90EEF58ED3D5EA3E01382642C1 /* Headers */,
+				40F44AC80590C41843A8523103452C7C /* Sources */,
+				C03071332C445E88D1676EA83CF05AF7 /* Frameworks */,
+				447BB850764ED6256017E1115585C2D5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95DA9A79D11D884375866BF892530F71 /* PBXTargetDependency */,
+			);
+			name = "Pods-MLDanmakuKit_Example";
+			productName = Pods_MLDanmakuKit_Example;
+			productReference = 2595F8345BBA91BA19B823BE202121C6 /* Pods-MLDanmakuKit_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 1A00591C00E8929A90DA8753E8EF9D87 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				64E7B2E46641963B65E59D6A05CCFD95 /* MLDanmakuKit */,
+				81E4BAAD02982BAF1605205DC371CCA6 /* Pods-MLDanmakuKit_Example */,
+				5DAB1A5E65D358C7C7FA48AD56E1302C /* Pods-MLDanmakuKit_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		346E3D1BBACB615743BAC3460DE54959 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		447BB850764ED6256017E1115585C2D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CC9ACBE7C5EADAA0E2047F9836290D9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2A15B0832CA8C874A16F07D90EA40C7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F165D379074388D08D28897B2FE75F73 /* Pods-MLDanmakuKit_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40F44AC80590C41843A8523103452C7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D61CDF621FEF09AB01F1AB9A6F858EDF /* Pods-MLDanmakuKit_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9E1A11829DB224029EC60E63ED850AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5620B60129D5BC5575D6C0A3C981112 /* MLDanmakuAgent.m in Sources */,
+				CBD636F2131C73887C28384C94FA58D8 /* MLDanmakuCell.m in Sources */,
+				2C948F9841C261FA7CB4613BC45639CC /* MLDanmakuConfiguration.m in Sources */,
+				D8623AFF6355F21B54C48CC71C1B9E2D /* MLDanmakuContainerView.m in Sources */,
+				F2563A81F68EFE953A1B45D0CAAFF781 /* MLDanmakuEngine.m in Sources */,
+				A7070B0FBF4F70043002479B2CE009C5 /* MLDanmakuExtention.m in Sources */,
+				928140C5405C8DCF7DFEE36F66883B1C /* MLDanmakuKit-dummy.m in Sources */,
+				CB853AC77D350F60CDEE934EB46AB056 /* MLDanmakuLayerCell.m in Sources */,
+				23930947ED1C26824DF891D73C7565FA /* MLDanmakuLiveSource.m in Sources */,
+				2A0A914548D7C7CAAF9C013385A3EE1B /* MLDanmakuModel.m in Sources */,
+				483A265B8242194F78B65B61D6301191 /* MLDanmakuRichTextLayerCell.m in Sources */,
+				62F2FCC9632DBAA886DBA31CA2178044 /* MLDanmakuSource.m in Sources */,
+				A1D0A79AA7227657B0C81A83E64CA154 /* MLDanmakuTextCell.m in Sources */,
+				8EB0A5D2E36D5B3554A615FDAE540C7D /* MLDanmakuTextModel.m in Sources */,
+				ACFF4E6E01FC6D1A83F0308896FBFA4C /* MLDanmakuTypeRetainer.m in Sources */,
+				467AAEB5A61648FCDF692E909793CA7B /* MLDanmakuVideoSource.m in Sources */,
+				62CD616BF2FF7C371981A9E042D7B742 /* MLDanmakuView.m in Sources */,
+				6ECE75E1635A03C0F05C0657DB1F43AB /* MLRLDanmakuContainerView.m in Sources */,
+				8099BEE09E936AB5A5520D3F19E9DE32 /* MLTBDanmakuContainerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		95DA9A79D11D884375866BF892530F71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MLDanmakuKit;
+			target = 64E7B2E46641963B65E59D6A05CCFD95 /* MLDanmakuKit */;
+			targetProxy = D9DC4D05EE89D8346BC0B774818599EE /* PBXContainerItemProxy */;
+		};
+		BB93C8552F1A675C75086EF5773CB145 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-MLDanmakuKit_Example";
+			target = 81E4BAAD02982BAF1605205DC371CCA6 /* Pods-MLDanmakuKit_Example */;
+			targetProxy = B98596CBC1866971AE4798028FA67E2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		085C9132013C603360FB1DC63876CD25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53411169D6BEB49092EF2FE41026EF0E /* Pods-MLDanmakuKit_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MLDanmakuKit_Example/Pods-MLDanmakuKit_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MLDanmakuKit_Example/Pods-MLDanmakuKit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0A0EF2B5B1E85CBABC4714A676A99588 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6ECB90D19DAEAC1C2ECE9B02C67152DD /* MLDanmakuKit.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MLDanmakuKit/MLDanmakuKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MLDanmakuKit/MLDanmakuKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MLDanmakuKit/MLDanmakuKit.modulemap";
+				PRODUCT_MODULE_NAME = MLDanmakuKit;
+				PRODUCT_NAME = MLDanmakuKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D3552B1EFA6F2C1EF15F343F1734EA5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 632813201A8ACB88CAEEDCBE2A785E53 /* Pods-MLDanmakuKit_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MLDanmakuKit_Example/Pods-MLDanmakuKit_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MLDanmakuKit_Example/Pods-MLDanmakuKit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ECCBEF765E7227D3C4C3525EFC8F45E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD95D14F822E6C4D3B5E7094E4BC8DA2 /* MLDanmakuKit.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MLDanmakuKit/MLDanmakuKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MLDanmakuKit/MLDanmakuKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MLDanmakuKit/MLDanmakuKit.modulemap";
+				PRODUCT_MODULE_NAME = MLDanmakuKit;
+				PRODUCT_NAME = MLDanmakuKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ED650F52014D6A6A2C5EB0C839BEA0E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25776053C7C32CBD912011D5172B4B59 /* Pods-MLDanmakuKit_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MLDanmakuKit_Tests/Pods-MLDanmakuKit_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MLDanmakuKit_Tests/Pods-MLDanmakuKit_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F585D2A251DF40839D7CC4DFB770DED8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4292C78A72361308A17C0958B0AE1324 /* Pods-MLDanmakuKit_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MLDanmakuKit_Tests/Pods-MLDanmakuKit_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MLDanmakuKit_Tests/Pods-MLDanmakuKit_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		381F876FBAF96841F3B2F0CD22BCC360 /* Build configuration list for PBXNativeTarget "Pods-MLDanmakuKit_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3552B1EFA6F2C1EF15F343F1734EA5E /* Debug */,
+				085C9132013C603360FB1DC63876CD25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BE314E79539DA8F378ABD3853A7BB58 /* Build configuration list for PBXNativeTarget "Pods-MLDanmakuKit_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F585D2A251DF40839D7CC4DFB770DED8 /* Debug */,
+				ED650F52014D6A6A2C5EB0C839BEA0E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F8849D40246A4CF199023F69C736784 /* Build configuration list for PBXNativeTarget "MLDanmakuKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A0EF2B5B1E85CBABC4714A676A99588 /* Debug */,
+				ECCBEF765E7227D3C4C3525EFC8F45E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

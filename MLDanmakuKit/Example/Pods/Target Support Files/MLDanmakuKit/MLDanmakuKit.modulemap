@@ -1,0 +1,6 @@
+framework module MLDanmakuKit {
+  umbrella header "MLDanmakuKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

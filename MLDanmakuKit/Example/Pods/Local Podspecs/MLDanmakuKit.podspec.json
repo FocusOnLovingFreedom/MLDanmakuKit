@@ -1,0 +1,24 @@
+{
+  "name": "MLDanmakuKit",
+  "version": "1.0.0",
+  "summary": "一款简单易用的高性能弹幕引擎",
+  "description": "MLDanmakuKit是一款iOS平台上的高性能弹幕引擎，支持自定义弹幕样式，直播和点播两种模式；简单易上手，API类似UITableView,开发者几乎不需要任何学习成本就能轻松上手；性能表现优异，CPU占用率极低，不阻塞主线程。",
+  "homepage": "https://git.woa.com/QQSports_iOS/MLDanmaku.git",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "mountainsli": "lishan_workemail@163.com"
+  },
+  "source": {
+    "git": "https://git.woa.com/QQSports_iOS/MLDanmaku.git",
+    "branch": "master"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "DanmaKu/**/*.{h,m}",
+  "public_header_files": "DanmaKu/**/*.h",
+  "frameworks": "UIKit"
+}
